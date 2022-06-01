@@ -31,7 +31,8 @@ const swipe = new Swiper(".mySwiper", {
   };
   updateCount();
   });
-  
+ 
+   
   const bars = document.getElementById('bars');
   const mobileMenu = document.getElementById('mobileMenu');
   bars.addEventListener('click', function() {
@@ -39,11 +40,23 @@ const swipe = new Swiper(".mySwiper", {
   })
 
 
-
-// let button = document.getElementById("button");
-// button.addEventListener('mousemove', (e) => {
-//     x = e.offsetX;
-//     y = e.offsetY;
-//     button.style.setProperty('--mouse-x', x + "px");
-//     button.style.setProperty('--mouse-y', y + "px");
-// });
+  const validateEmail = (email) => {
+      return email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+    };
+    
+  const validate = () => {
+      const result = document.querySelector('#result');
+      const email = document.querySelector('#email').value;
+      result.textContent = "";
+  
+      if (validateEmail(email)) {
+          result.textContent = email + ' is valid :)'
+          result.style.color = 'green';
+      } else {
+          result.textContent = email + ' is not valid :('
+          result.style.color = '#E77C40';
+      }
+      return false;
+  }

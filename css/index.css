@@ -127,6 +127,122 @@ header {
   pointer-events: none;
 }
 
+@media (max-width: 1024px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+    background-color: white;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #butt {
+    font-family: "Jost", sans-serif;
+    color: #FFFFFF;
+    width: 100px;
+    height: 38px;
+    padding: 5px 15px;
+    background: #e67118;
+    font-size: 13px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin-left: 20px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #butt:hover {
+    -webkit-transform: 0.1s;
+            transform: 0.1s;
+    color: #e67118;
+    background-color: #FFFFFF;
+    border: 1px solid #e67118;
+  }
+  .logo {
+    color: black;
+    cursor: default;
+  }
+  .logo span {
+    color: #000000;
+  }
+  .bars {
+    font-size: 1px;
+    color: black;
+    display: none;
+    -webkit-transition: color 0.6s ease;
+    transition: color 0.6s ease;
+    opacity: 0;
+  }
+  .bars:hover {
+    color: #000000;
+  }
+  .nav-link {
+    font-family: "Jost", sans-serif;
+    margin-left: 30px;
+    color: black;
+    text-decoration: none;
+    -webkit-transition: color 0.6s ease;
+    transition: color 0.6s ease;
+    font-size: 18px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .nav-link:hover {
+    -webkit-transform: 0.1s;
+            transform: 0.1s;
+    color: #e67118;
+  }
+  .nav-linkk {
+    opacity: 0;
+  }
+  .mobile-menu {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    background-color: white;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 65px;
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 768px) {
   #bars {
     display: -webkit-box;
@@ -435,7 +551,7 @@ footer .footer-body .fourth div .form__field {
   border-bottom: 2px solid #1A1A1A;
   outline: 0;
   font-size: 1.3rem;
-  color: #E67118;
+  color: #2a2a2a;
   padding: 7px 0;
   background: transparent;
   -webkit-transition: border-color 0.2s;

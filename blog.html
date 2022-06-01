@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href="http://yoursite.com/themify-icons.css" rel="stylesheet">
@@ -202,8 +202,15 @@
       
     </main>
 
-<footer>
-    <div class="footer-body">
+    <footer>
+      <div class="footer-head">
+        <div>
+          <h3>Any help needed?</h3>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+        </div>
+        <button><a href="https://www.facebook.com/texnoera/">Contact Us <i class="fa fa-angle-right"></i></a></button>
+      </div>
+      <div class="footer-body">
         <div class="first">
           <img src="/assest/image/fist-logo.webp">
           <div>
@@ -237,8 +244,9 @@
             <p>Subscribe our newsletter to get updates about our services and offers.</p>
   
             <div class="form__group field">
-              <input type="email" class="form__field" placeholder="Name" name="name" id='name' required />
-              <label for="name" class="form__label">Email Address</label>
+              <input type="email" id="email" oninput="validate()" class="form__field" placeholder="Name" name="name" required />
+              <label for="email" class="form__label">Email Address</label>
+              <span id="result" style="margin-top: 6px; font-size: 14px; font-family: sans-serif;"></span>
             </div>
   
           </div>
@@ -255,11 +263,12 @@
         </div>
   
       </div>
-</footer>
+    </footer>
+  
 
     <a href="#" class="top"><i class="fa fa-angle-double-up"></i></a>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="blog.js"></script>
+    <script src="/js/blog.js"></script>
 </body>
 
 </html>
