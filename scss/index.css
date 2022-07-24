@@ -1,0 +1,796 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martel:wght@200&family=Montserrat:wght@200;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Martel:wght@200&family=Montserrat:wght@200;700;900&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martel:wght@200&family=Montserrat:wght@200;700;900&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martel:wght@200&family=Montserrat:wght@200;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+header {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+}
+header div {
+  padding: 25px 50px;
+}
+header div #navbar {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.25rem;
+  height: 70px;
+}
+header div #navbar span {
+  margin-right: 16%;
+}
+header div #navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header div #navbar ul li a {
+  padding: 0.75rem;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 1px 100px;
+}
+footer .push {
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: #E5E5E5;
+}
+footer .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 1px;
+}
+footer .container .first {
+  width: 20%;
+  height: 120px;
+  margin-top: 20px;
+}
+footer .container .first a {
+  color: #000;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+footer .container .first .img {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+footer .container .second {
+  width: 24%;
+  height: 120px;
+  margin-top: 20px;
+}
+footer .container .second h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+footer .container .second h4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 27px;
+}
+footer .container .second .form-control {
+  font-family: sans-serif;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #dfdfdf;
+  padding: 0px 15px;
+}
+footer .container .second button {
+  width: 130px;
+  height: 40px;
+  background-color: #282828;
+}
+footer .container .second button a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 480px) {
+  footer {
+    width: 100%;
+    height: auto;
+    padding: 0px 40px;
+  }
+  footer .push {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: #E5E5E5;
+  }
+  footer .container {
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: space-around;
+    padding: 1px 1px;
+  }
+  footer .container .first {
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+  }
+  footer .container .first a {
+    color: #000;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  footer .container .first .img {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+  }
+  footer .container .second {
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+  }
+  footer .container .second h2 {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  footer .container .second h4 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 27px;
+  }
+  footer .container .second .form-control {
+    font-family: sans-serif;
+    width: 190px;
+    height: 40px;
+    border: 1px solid #dfdfdf;
+    padding: 0px 15px;
+  }
+  footer .container .second button {
+    width: 190px;
+    height: 40px;
+    background-color: #282828;
+  }
+  footer .container .second button a {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 120px 100px;
+}
+
+.Container {
+  padding: 50px 160px;
+}
+
+#FirstSection {
+  background-image: url("/assest/image/firsthead.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#FirstSection .container {
+  position: absolute;
+  left: 7%;
+  top: 7%;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+}
+#FirstSection .container h2 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 49px;
+  color: #595959;
+}
+#FirstSection .container button {
+  width: 190px;
+  height: 40px;
+  background-color: #A04C97;
+  border-radius: 5px;
+}
+#FirstSection .container button a {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+#SecondSection {
+  width: 100%;
+  height: auto;
+}
+#SecondSection .container {
+  padding: 120px 450px;
+}
+#SecondSection .container .text {
+  width: 100%;
+  height: auto;
+}
+#SecondSection .container .text h2 {
+  font-family: "open sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #000000;
+}
+#SecondSection .descriptionIcons {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 150px;
+}
+#SecondSection .descriptionIcons div {
+  width: 18%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+#SecondSection .descriptionIcons div img {
+  margin-bottom: 20px;
+}
+#SecondSection .descriptionIcons div h4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000000;
+}
+#SecondSection .descriptionIcons div p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #787878;
+}
+
+#ThirdSection {
+  width: 100%;
+  height: auto;
+}
+#ThirdSection .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 100px;
+}
+#ThirdSection .container .text {
+  padding: 12% 0% 12% 0%;
+  width: 45%;
+  height: 500px;
+}
+#ThirdSection .container .text h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+#ThirdSection .container .text p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  color: #424242;
+}
+#ThirdSection .container .text button {
+  width: 190px;
+  height: 44px;
+  background: #595959;
+  border-radius: 3px;
+}
+#ThirdSection .container .text button a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#ThirdSection .container .img {
+  width: 46.6%;
+  height: 540px;
+}
+
+#FourthSection .container {
+  padding: 0px 450px;
+}
+#FourthSection .container .text {
+  width: 100%;
+  height: auto;
+}
+#FourthSection .container .text h2 {
+  font-family: "open sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #000000;
+}
+#FourthSection .Container {
+  width: 100%;
+  height: auto;
+  padding: 30px 150px;
+}
+#FourthSection .Container p {
+  width: 90%;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #424242;
+}
+#FourthSection .Container .swiper-container {
+  position: relative;
+}
+#FourthSection .Container .swiper-container .swiper {
+  width: 80%;
+  height: 100%;
+}
+#FourthSection .Container .swiper-container .swiper-slide {
+  height: 300px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#FourthSection .Container .swiper-container .swiper-slide div img {
+  width: 220px;
+  height: 270px;
+  margin-bottom: 8px;
+}
+#FourthSection .Container .swiper-container .swiper-slide div h4 {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+#FourthSection .Container .swiper-container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#FiftySection {
+  width: 100%;
+  height: auto;
+}
+#FiftySection .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 100px;
+}
+#FiftySection .container .text {
+  padding: 12% 0% 12% 0%;
+  width: 45%;
+  height: 500px;
+}
+#FiftySection .container .text h2 {
+  width: 75%;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+#FiftySection .container .text p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  color: #424242;
+}
+#FiftySection .container .text button {
+  width: 190px;
+  height: 48px;
+  background: #282828;
+  border-radius: 3px;
+  transform: 0.5s;
+}
+#FiftySection .container .text button a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#FiftySection .container .img {
+  width: 46.6%;
+  height: 540px;
+}
+
+@media (max-width: 480px) {
+  #FirstSection {
+    background-image: url("/assest/image/firsthead.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #FirstSection .container {
+    position: absolute;
+    left: -15%;
+    top: 5%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  #FirstSection .container h2 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    line-height: 49px;
+    color: #595959;
+  }
+  #FirstSection .container button {
+    width: 170px;
+    height: 40px;
+    background-color: #A04C97;
+    border-radius: 5px;
+  }
+  #FirstSection .container button a {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  #SecondSection {
+    width: 100%;
+    height: auto;
+  }
+  #SecondSection .container {
+    padding: 4% 4%;
+  }
+  #SecondSection .container .text {
+    width: 100%;
+    height: auto;
+  }
+  #SecondSection .container .text h2 {
+    font-family: "open sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+  }
+  #SecondSection .descriptionIcons {
+    display: block;
+    justify-content: space-around;
+    padding: 0px 14%;
+  }
+  #SecondSection .descriptionIcons div {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+  #SecondSection .descriptionIcons div img {
+    margin-bottom: 20px;
+  }
+  #SecondSection .descriptionIcons div h4 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000000;
+  }
+  #SecondSection .descriptionIcons div p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #787878;
+  }
+  #ThirdSection {
+    width: 100%;
+    height: auto;
+  }
+  #ThirdSection .container {
+    display: block;
+    justify-content: space-around;
+    padding: 40px 40px;
+  }
+  #ThirdSection .container .text {
+    padding: 4% 0% 4% 0%;
+    width: 100%;
+    height: 240px;
+  }
+  #ThirdSection .container .text h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  #ThirdSection .container .text p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #424242;
+  }
+  #ThirdSection .container .text button {
+    width: 160px;
+    height: 44px;
+    background: #595959;
+    border-radius: 3px;
+  }
+  #ThirdSection .container .text button a {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  #ThirdSection .container .img {
+    width: 200px;
+    height: 320px;
+  }
+  #ThirdSection .container .img img {
+    width: 400px;
+    height: 320px;
+  }
+  #FourthSection .container {
+    padding: 40px 40px;
+  }
+  #FourthSection .container .text {
+    width: 100%;
+    height: auto;
+  }
+  #FourthSection .container .text h2 {
+    font-family: "open sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+  }
+  #FourthSection .Container {
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+  }
+  #FourthSection .Container p {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 40px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #424242;
+  }
+  #FourthSection .Container .swiper-container {
+    position: relative;
+  }
+  #FourthSection .Container .swiper-container .swiper-button-prev, #FourthSection .Container .swiper-container .swiper-rtl .swiper-button-next {
+    left: -1% !important;
+  }
+  #FourthSection .Container .swiper-container .swiper-button-next, #FourthSection .Container .swiper-container .swiper-rtl .swiper-button-prev {
+    right: -1% !important;
+  }
+  #FourthSection .Container .swiper-container .swiper {
+    width: 90%;
+    height: 100%;
+  }
+  #FourthSection .Container .swiper-container .swiper-slide {
+    height: 200px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #FourthSection .Container .swiper-container .swiper-slide div img {
+    width: 115px;
+    height: 190px;
+    margin-bottom: 8px;
+  }
+  #FourthSection .Container .swiper-container .swiper-slide div h4 {
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+  }
+  #FourthSection .Container .swiper-container .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #FiftySection {
+    width: 100%;
+    height: auto;
+  }
+  #FiftySection .container {
+    display: block;
+    justify-content: space-around;
+    padding: 40px 40px;
+  }
+  #FiftySection .container .text {
+    padding: 1% 0% 1% 0%;
+    width: 100%;
+    height: 220px;
+  }
+  #FiftySection .container .text h2 {
+    width: 100%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+  #FiftySection .container .text p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    color: #424242;
+  }
+  #FiftySection .container .text button {
+    width: 160px;
+    height: 48px;
+    background: #282828;
+    border-radius: 5px;
+    transform: 0.5s;
+  }
+  #FiftySection .container .text button a {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  #FiftySection .container .img {
+    width: auto;
+    height: 320px;
+  }
+  #FiftySection .container .img img {
+    width: 100%;
+    height: 300px;
+  }
+}
+.swiper {
+  position: initial !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 26px !important;
+  color: #000000;
+}/*# sourceMappingURL=index.css.map */
